@@ -5,7 +5,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} YourCompany. All rights reserved.
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

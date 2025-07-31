@@ -1,22 +1,22 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { Button } from '@/app/components/ui/button'
+import Link from "next/link";
+import { Button } from "@/app/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/app/components/ui/dropdown-menu'
-import { Menu } from 'lucide-react'
+} from "@/app/components/ui/dropdown-menu";
+import { Menu } from "lucide-react";
 
 const Header = () => {
   const navItems = [
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/portfolio', label: 'Portfolio' },
-    { href: '/contact', label: 'Contact' },
-  ]
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
+    { href: "/portfolio", label: "Portfolio" },
+    { href: "/contact", label: "Contact" },
+  ];
 
   return (
     <header className="border-b">
@@ -28,7 +28,11 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-sm font-medium items-center">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-primary transition">
+            <Link
+              key={item.href}
+              href={item.href}
+              className="hover:text-primary transition"
+            >
               {item.label}
             </Link>
           ))}
@@ -48,11 +52,7 @@ const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-36 min-w-[9rem]">
               {navItems.map((item) => (
-                <DropdownMenuItem
-                  asChild
-                  key={item.href}
-                  className="px-4 py-2"
-                >
+                <DropdownMenuItem asChild key={item.href} className="px-4 py-2">
                   <Link href={item.href} className="w-full block">
                     {item.label}
                   </Link>
@@ -63,7 +63,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

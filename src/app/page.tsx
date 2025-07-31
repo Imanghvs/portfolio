@@ -1,20 +1,23 @@
-import Hero from '@/app/components/Hero'
-import ServiceCard from '@/app/components/ServiceCard'
+import Hero from "@/app/components/Hero";
+import ServiceCard from "@/app/components/ServiceCard";
 
 const services = [
   {
-    title: 'Custom Software Development',
-    description: 'We build scalable, maintainable software tailored to your business needs.',
+    title: "Custom Software Development",
+    description:
+      "We build scalable, maintainable software tailored to your business needs.",
   },
   {
-    title: 'DevOps & Infrastructure',
-    description: 'CI/CD, containerization, cloud infrastructure, and monitoring handled for you.',
+    title: "DevOps & Infrastructure",
+    description:
+      "CI/CD, containerization, cloud infrastructure, and monitoring handled for you.",
   },
   {
-    title: 'Consulting',
-    description: 'Technical strategy and audits to unlock your team’s potential.',
+    title: "Consulting",
+    description:
+      "Technical strategy and audits to unlock your team’s potential.",
   },
-]
+];
 
 export default function HomePage() {
   return (
@@ -29,5 +32,5 @@ export default function HomePage() {
         </div>
       </section>
     </>
-  )
+  );
 }
