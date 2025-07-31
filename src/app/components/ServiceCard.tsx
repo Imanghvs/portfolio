@@ -1,3 +1,6 @@
+import { CodeIcon } from "lucide-react";
+import { Card, CardContent } from "./ui/card";
+
 interface Props {
   title: string;
   description: string;
@@ -5,10 +8,13 @@ interface Props {
 
 const ServiceCard = ({ title, description }: Props) => {
   return (
-    <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-muted-foreground">{description}</p>
-    </div>
+    <Card>
+      <CardContent className="p-6 space-y-4 text-center">
+        <CodeIcon className="mx-auto h-8 w-8 text-primary" />
+        <h3 className="text-xl font-semibold">{title}</h3>
+        <p className="text-muted-foreground">{description}</p>
+      </CardContent>
+    </Card>
   );
 };
 
