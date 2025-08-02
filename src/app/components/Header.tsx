@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/app/components/ui/dropdown-menu";
 import { Menu } from "lucide-react";
+import LinkButton from "./LinkButton";
 
 const Header = () => {
   const navItems = [
@@ -36,9 +37,9 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
-          <Link href="/contact">
-            <Button size="sm">Contact</Button>
-          </Link>
+          <LinkButton size="sm" href="/contact">
+            Contact
+          </LinkButton>
         </nav>
 
         {/* Mobile Dropdown Menu */}

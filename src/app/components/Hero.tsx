@@ -1,8 +1,7 @@
 // app/components/hero.tsx
 "use client";
 
-import { Button } from "@/app/components/ui/button";
-import Link from "next/link";
+import LinkButton from "@/app/components/LinkButton";
 
 export function Hero() {
   return (
@@ -15,9 +14,7 @@ export function Hero() {
         branch!
       </p>
       <div className="pt-6">
-        <Link href="/contact">
-          <Button size="lg">Let&apos;s Work Together</Button>
-        </Link>
+        <LinkButton href="/contact">Let&apos;s Work Together</LinkButton>
       </div>
     </section>
   );

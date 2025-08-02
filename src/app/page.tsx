@@ -1,10 +1,9 @@
 import Hero from "@/app/components/Hero";
 import { Badge } from "@/app/components/ui/badge";
-import { Button } from "@/app/components/ui/button";
 import { Separator } from "@/app/components/ui/separator";
 import { MailIcon } from "lucide-react";
-import Link from "next/link";
 import ServiceCard from "./components/ServiceCard";
+import LinkButton from "./components/LinkButton";
 
 const services = [
   {
@@ -83,12 +82,10 @@ export default function HomePage() {
           Whether you&apos;re a startup or scaling team, we can help you deliver
           robust, maintainable systems. Drop us a message to get started.
         </p>
-        <Link href="/contact">
-          <Button size="lg">
-            <MailIcon className="mr-2 h-4 w-4" />
-            Contact Us
-          </Button>
-        </Link>
+        <LinkButton size="lg" href="/contact">
+          <MailIcon className="mr-2 h-4 w-4" />
+          Contact Us
+        </LinkButton>
       </section>
     </main>
   );
