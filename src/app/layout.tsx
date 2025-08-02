@@ -3,12 +3,16 @@ import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Your Company Name",
-  description: "We build modern software for modern businesses.",
+export const metadata: Metadata = {
+  title: "GBEA",
+  description:
+    "Ghavasieh Brothers Except Arsham (GBEA) is a software development" +
+    " company specializing in building robust, maintainable systems" +
+    " for startups and scaling teams.",
 };
 
 export default function RootLayout({
