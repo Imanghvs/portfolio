@@ -2,8 +2,8 @@ import Hero from "@/app/components/Hero";
 import { Badge } from "@/app/components/ui/badge";
 import { Separator } from "@/app/components/ui/separator";
 import { MailIcon } from "lucide-react";
-import ServiceCard from "./components/ServiceCard";
 import LinkButton from "./components/LinkButton";
+import ServicesSection from "./components/ServicesSection";
 
 const services = [
   {
@@ -42,18 +42,7 @@ export default function HomePage() {
       <Separator />
 
       {/* Services */}
-      <section className="space-y-12">
-        <h2 className="text-3xl font-semibold text-center">What We Do</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {services.map((service) => (
-            <ServiceCard
-              key={service.title}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
-        </div>
-      </section>
+      <ServicesSection services={services} />
 
       <Separator />
 
